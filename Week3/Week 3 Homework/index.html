@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Halloween Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <img id="card-image" src="jackolantern.png" alt="Jack O Lantern">
+    
+    <h1>Happy Halloween!</h1>
+    
+    <p id="card-text">
+      Wishing you a spooky, fun-filled Halloween night full of glowing jack-o'-lanterns, haunted adventures, and a round of Trick or Treat!
+    </p>
+
+    <button onclick="trickOrTreat()">Trick or Treat?</button>
+  </div>
+
+  <script>
+    function trickOrTreat() {
+      const imageElement = document.getElementById("card-image");
+      const textElement = document.getElementById("card-text");
+
+      const isCandy = Math.random() < 0.5;
+
+      if (isCandy) {
+        imageElement.src = "candy.png";
+        textElement.textContent = "Score! You got a delicious piece of candy! Happy Halloween!";
+      } else {
+        imageElement.src = "monster.png";
+        textElement.textContent = "Oh no! A spooky monster jumped out at you! Ahhh!";
+      }
+    }
+  </script>
+
+</body>
+</html>
