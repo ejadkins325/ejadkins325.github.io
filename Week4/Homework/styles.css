@@ -1,0 +1,160 @@
+html, * {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #14110f;
+    color: #ffffff;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #2b2118;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid #e09f3e;
+}
+
+.sticky-nav button {
+    background-color: #e09f3e;
+    color: #14110f;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sticky-nav button:hover {
+    background-color: #fff3b0;
+}
+
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #e09f3e;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #d6ccc2;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #14110f;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+}
+
+.card h2 {
+    font-size: 1.75rem;
+    margin: 1rem 0 0.5rem 0;
+    align-self: flex-start;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+    align-self: flex-start;
+}
+
+.card ul {
+    align-self: flex-start;
+    margin: 0.75rem 0 1.25rem 0;
+    padding-left: 1.5rem;
+}
+
+.card li {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.button-row button {
+    background-color: #14110f;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-row button:hover {
+    background-color: #e09f3e;
+    color: #14110f;
+}
+
+@media screen and (max-width: 720px) {
+    html, * {
+        font-size: 12px;
+    }
+
+    .sticky-nav {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .card {
+        min-height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .card img {
+        height: 40vh;
+    }
+}
