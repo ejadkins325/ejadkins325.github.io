@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Chinchilla Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="greeting-banner" class="banner">
+    Loading chinchilla status...
+  </div>
+
+<header>
+    <div class="header-content">
+      <img src="images/chinchilla-hero.jpg" alt="Cute fluffy chinchilla" class="hero-img">
+      <h1>The Chinchilla Corner</h1>
+      <p>Your guide to the world's softest nocturnal rodents.</p>
+      <button id="theme-toggle-btn" class="btn">Switch to Nocturnal Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Essential Care Basics</h2>
+      <p class="subtitle">Hover over each card to reveal a care pro-tip.</p>
+      
+      <div class="card-grid">
+        <article class="care-card">
+          <h3>Diet &amp; Hydration</h3>
+          <p>Chinchillas thrive on unlimited timothy hay, quality pellets, and fresh filtered water.</p>
+          <p class="pro-tip">Pro-Tip: Avoid sugary fruits and nuts—their digestive systems are very sensitive!</p>
+        </article>
+
+        <article class="care-card">
+          <h3>Cool Habitat</h3>
+          <p>Because of their ultra-dense fur, chinchillas overheat easily and need air-conditioned rooms.</p>
+          <p class="pro-tip">Pro-Tip: Keep the room below 70°F (21°C) and place a chilled marble slab in their cage.</p>
+        </article>
+
+        <article class="care-card">
+          <h3>Chewing &amp; Play</h3>
+          <p>Their teeth grow continuously throughout their lives, so safe chew toys are a must.</p>
+          <p class="pro-tip">Pro-Tip: Apple wood sticks and pumice stones are safe, chinchilla-approved favorites.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dust-section">
+      <h2>How Do Chinchillas Stay Clean?</h2>
+      <p>Never bathe a chinchilla in water! Their fur is so thick it cannot dry properly.</p>
+      <button id="toggle-guide-btn" class="btn">Show Dust Bath Guide</button>
+
+   <div id="dust-guide" class="hidden-box">
+        <h3>The Volcanic Dust Bath</h3>
+        <ul>
+          <li><strong>Frequency:</strong> Offer a dust bath 2 to 3 times per week.</li>
+          <li><strong>Duration:</strong> Leave the bath house in the cage for 10–15 minutes.</li>
+          <li><strong>Type of Dust:</strong> Use 100% natural volcanic pumice dust (never sand or talcum powder).</li>
+        </ul>
+        <img src="images/chinchilla-bath.jpg" alt="Chinchilla taking a dust bath" class="guide-img">
+      </div>
+    </section>
+
+    <section class="section checklist-section">
+      <h2>Daily Chinchilla Care Checklist</h2>
+      <p>Keep track of your daily tasks below.</p>
+
+      <form id="todo-form">
+        <input 
+          type="text" 
+          id="task-input" 
+          placeholder="Add a care task (e.g., Sweep cage shelves)..." 
+          autocomplete="off"
+        >
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+      <p id="input-hint" class="hint-text">Click the text box to add a new reminder.</p>
+
+      <ul id="task-list">
+        <li>Refill timothy hay rack</li>
+        <li>Check room temperature (under 70°F)</li>
+        <li>Refresh water bottle</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for Week 6 Web Programming &bull; All About Chinchillas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
